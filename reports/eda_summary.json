@@ -1,0 +1,600 @@
+{
+  "records": 10000,
+  "target_counts": {
+    "0": 9661,
+    "1": 339
+  },
+  "overall_failure_rate": 0.0339,
+  "machine_types": [
+    {
+      "Type": "H",
+      "records": 1003,
+      "failures": 21,
+      "failure_rate": 0.020937188434695914
+    },
+    {
+      "Type": "L",
+      "records": 6000,
+      "failures": 235,
+      "failure_rate": 0.03916666666666667
+    },
+    {
+      "Type": "M",
+      "records": 2997,
+      "failures": 83,
+      "failure_rate": 0.02769436102769436
+    }
+  ],
+  "sensor_statistics_by_target": {
+    "Air temperature [K]": [
+      {
+        "Machine failure": 0,
+        "mean": 299.9739985508746,
+        "median": 300.0,
+        "std": 1.9907479694438388
+      },
+      {
+        "Machine failure": 1,
+        "mean": 300.88643067846607,
+        "median": 301.6,
+        "std": 2.0714726067976117
+      }
+    ],
+    "Process temperature [K]": [
+      {
+        "Machine failure": 0,
+        "mean": 309.99556981678916,
+        "median": 310.0,
+        "std": 1.4868460647646082
+      },
+      {
+        "Machine failure": 1,
+        "mean": 310.2902654867257,
+        "median": 310.4,
+        "std": 1.3636856993840747
+      }
+    ],
+    "Rotational speed [rpm]": [
+      {
+        "Machine failure": 0,
+        "mean": 1540.2600144912535,
+        "median": 1507.0,
+        "std": 167.39473403228376
+      },
+      {
+        "Machine failure": 1,
+        "mean": 1496.486725663717,
+        "median": 1365.0,
+        "std": 384.94354727230365
+      }
+    ],
+    "Torque [Nm]": [
+      {
+        "Machine failure": 0,
+        "mean": 39.62965531518476,
+        "median": 39.9,
+        "std": 9.472080111077108
+      },
+      {
+        "Machine failure": 1,
+        "mean": 50.16814159292036,
+        "median": 53.7,
+        "std": 16.374498133978204
+      }
+    ],
+    "Tool wear [min]": [
+      {
+        "Machine failure": 0,
+        "mean": 106.69371700652107,
+        "median": 107.0,
+        "std": 62.94579046389421
+      },
+      {
+        "Machine failure": 1,
+        "mean": 143.78171091445427,
+        "median": 165.0,
+        "std": 72.75987593568684
+      }
+    ]
+  },
+  "sensor_quintiles": {
+    "Air temperature [K]": [
+      {
+        "records": 2135,
+        "failures": 46,
+        "failure_rate": 0.021545667447306793,
+        "minimum": 295.3,
+        "maximum": 298.1
+      },
+      {
+        "records": 1904,
+        "failures": 48,
+        "failure_rate": 0.025210084033613446,
+        "minimum": 298.2,
+        "maximum": 299.2
+      },
+      {
+        "records": 2091,
+        "failures": 41,
+        "failure_rate": 0.0196078431372549,
+        "minimum": 299.3,
+        "maximum": 300.6
+      },
+      {
+        "records": 1877,
+        "failures": 60,
+        "failure_rate": 0.031965903036760786,
+        "minimum": 300.7,
+        "maximum": 301.9
+      },
+      {
+        "records": 1993,
+        "failures": 144,
+        "failure_rate": 0.07225288509784245,
+        "minimum": 302.0,
+        "maximum": 304.5
+      }
+    ],
+    "Process temperature [K]": [
+      {
+        "records": 2168,
+        "failures": 54,
+        "failure_rate": 0.024907749077490774,
+        "minimum": 305.7,
+        "maximum": 308.6
+      },
+      {
+        "records": 2043,
+        "failures": 35,
+        "failure_rate": 0.017131669114047968,
+        "minimum": 308.7,
+        "maximum": 309.6
+      },
+      {
+        "records": 1924,
+        "failures": 92,
+        "failure_rate": 0.04781704781704782,
+        "minimum": 309.7,
+        "maximum": 310.5
+      },
+      {
+        "records": 1944,
+        "failures": 83,
+        "failure_rate": 0.042695473251028807,
+        "minimum": 310.6,
+        "maximum": 311.3
+      },
+      {
+        "records": 1921,
+        "failures": 75,
+        "failure_rate": 0.039042165538781884,
+        "minimum": 311.4,
+        "maximum": 313.8
+      }
+    ],
+    "Rotational speed [rpm]": [
+      {
+        "records": 2007,
+        "failures": 244,
+        "failure_rate": 0.12157448928749377,
+        "minimum": 1168,
+        "maximum": 1405
+      },
+      {
+        "records": 2011,
+        "failures": 29,
+        "failure_rate": 0.014420686225758329,
+        "minimum": 1406,
+        "maximum": 1470
+      },
+      {
+        "records": 1999,
+        "failures": 12,
+        "failure_rate": 0.006003001500750375,
+        "minimum": 1471,
+        "maximum": 1541
+      },
+      {
+        "records": 1992,
+        "failures": 9,
+        "failure_rate": 0.004518072289156626,
+        "minimum": 1542,
+        "maximum": 1644
+      },
+      {
+        "records": 1991,
+        "failures": 45,
+        "failure_rate": 0.022601707684580613,
+        "minimum": 1645,
+        "maximum": 2886
+      }
+    ],
+    "Torque [Nm]": [
+      {
+        "records": 2002,
+        "failures": 47,
+        "failure_rate": 0.023476523476523476,
+        "minimum": 3.8,
+        "maximum": 31.4
+      },
+      {
+        "records": 2012,
+        "failures": 9,
+        "failure_rate": 0.0044731610337972166,
+        "minimum": 31.5,
+        "maximum": 37.5
+      },
+      {
+        "records": 2018,
+        "failures": 12,
+        "failure_rate": 0.005946481665014866,
+        "minimum": 37.6,
+        "maximum": 42.7
+      },
+      {
+        "records": 1985,
+        "failures": 43,
+        "failure_rate": 0.021662468513853905,
+        "minimum": 42.8,
+        "maximum": 48.3
+      },
+      {
+        "records": 1983,
+        "failures": 228,
+        "failure_rate": 0.11497730711043873,
+        "minimum": 48.4,
+        "maximum": 76.6
+      }
+    ],
+    "Tool wear [min]": [
+      {
+        "records": 2027,
+        "failures": 48,
+        "failure_rate": 0.023680315737543166,
+        "minimum": 0,
+        "maximum": 42
+      },
+      {
+        "records": 2006,
+        "failures": 42,
+        "failure_rate": 0.020937188434695914,
+        "minimum": 43,
+        "maximum": 86
+      },
+      {
+        "records": 2014,
+        "failures": 47,
+        "failure_rate": 0.02333664349553128,
+        "minimum": 87,
+        "maximum": 130
+      },
+      {
+        "records": 1999,
+        "failures": 43,
+        "failure_rate": 0.021510755377688845,
+        "minimum": 131,
+        "maximum": 174
+      },
+      {
+        "records": 1954,
+        "failures": 159,
+        "failure_rate": 0.08137154554759468,
+        "minimum": 175,
+        "maximum": 253
+      }
+    ]
+  },
+  "pearson_correlations": {
+    "Air temperature [K]": {
+      "Air temperature [K]": 1.0,
+      "Process temperature [K]": 0.8761071581166637,
+      "Rotational speed [rpm]": 0.022670458795535774,
+      "Torque [Nm]": -0.013777823050932982,
+      "Tool wear [min]": 0.013852827663160141,
+      "Machine failure": 0.08255568978322685
+    },
+    "Process temperature [K]": {
+      "Air temperature [K]": 0.8761071581166637,
+      "Process temperature [K]": 1.0,
+      "Rotational speed [rpm]": 0.019276713901797683,
+      "Torque [Nm]": -0.01406061311689268,
+      "Tool wear [min]": 0.013487517120005912,
+      "Machine failure": 0.03594597332975212
+    },
+    "Rotational speed [rpm]": {
+      "Air temperature [K]": 0.022670458795535774,
+      "Process temperature [K]": 0.019276713901797683,
+      "Rotational speed [rpm]": 1.0,
+      "Torque [Nm]": -0.8750270862996037,
+      "Tool wear [min]": 0.00022308484018726584,
+      "Machine failure": -0.044187559734375326
+    },
+    "Torque [Nm]": {
+      "Air temperature [K]": -0.013777823050932982,
+      "Process temperature [K]": -0.01406061311689268,
+      "Rotational speed [rpm]": -0.8750270862996037,
+      "Torque [Nm]": 1.0,
+      "Tool wear [min]": -0.003092781440768214,
+      "Machine failure": 0.1913207750594941
+    },
+    "Tool wear [min]": {
+      "Air temperature [K]": 0.013852827663160141,
+      "Process temperature [K]": 0.013487517120005912,
+      "Rotational speed [rpm]": 0.00022308484018726584,
+      "Torque [Nm]": -0.003092781440768214,
+      "Tool wear [min]": 1.0,
+      "Machine failure": 0.1054482189195948
+    },
+    "Machine failure": {
+      "Air temperature [K]": 0.08255568978322685,
+      "Process temperature [K]": 0.03594597332975212,
+      "Rotational speed [rpm]": -0.044187559734375326,
+      "Torque [Nm]": 0.1913207750594941,
+      "Tool wear [min]": 0.1054482189195948,
+      "Machine failure": 1.0
+    }
+  },
+  "lag_one_correlations_in_csv_order": {
+    "Air temperature [K]": 0.9994169352540043,
+    "Process temperature [K]": 0.9985495645440854,
+    "Rotational speed [rpm]": 0.007666959625189196,
+    "Torque [Nm]": 0.005399350523448832,
+    "Tool wear [min]": 0.9305941444537967
+  },
+  "row_blocks": [
+    {
+      "block": 1,
+      "records": 1000,
+      "failures": 23,
+      "failure_rate": 0.023,
+      "first_row": 1,
+      "last_row": 1000,
+      "TWF": 1,
+      "HDF": 0,
+      "PWF": 13,
+      "OSF": 10,
+      "RNF": 0
+    },
+    {
+      "block": 2,
+      "records": 1000,
+      "failures": 29,
+      "failure_rate": 0.029,
+      "first_row": 1001,
+      "last_row": 2000,
+      "TWF": 5,
+      "HDF": 0,
+      "PWF": 13,
+      "OSF": 12,
+      "RNF": 3
+    },
+    {
+      "block": 3,
+      "records": 1000,
+      "failures": 22,
+      "failure_rate": 0.022,
+      "first_row": 2001,
+      "last_row": 3000,
+      "TWF": 5,
+      "HDF": 0,
+      "PWF": 8,
+      "OSF": 8,
+      "RNF": 2
+    },
+    {
+      "block": 4,
+      "records": 1000,
+      "failures": 27,
+      "failure_rate": 0.027,
+      "first_row": 3001,
+      "last_row": 4000,
+      "TWF": 4,
+      "HDF": 7,
+      "PWF": 9,
+      "OSF": 9,
+      "RNF": 3
+    },
+    {
+      "block": 5,
+      "records": 1000,
+      "failures": 134,
+      "failure_rate": 0.134,
+      "first_row": 4001,
+      "last_row": 5000,
+      "TWF": 6,
+      "HDF": 108,
+      "PWF": 15,
+      "OSF": 12,
+      "RNF": 0
+    },
+    {
+      "block": 6,
+      "records": 1000,
+      "failures": 20,
+      "failure_rate": 0.02,
+      "first_row": 5001,
+      "last_row": 6000,
+      "TWF": 5,
+      "HDF": 0,
+      "PWF": 8,
+      "OSF": 9,
+      "RNF": 6
+    },
+    {
+      "block": 7,
+      "records": 1000,
+      "failures": 23,
+      "failure_rate": 0.023,
+      "first_row": 6001,
+      "last_row": 7000,
+      "TWF": 5,
+      "HDF": 0,
+      "PWF": 10,
+      "OSF": 8,
+      "RNF": 3
+    },
+    {
+      "block": 8,
+      "records": 1000,
+      "failures": 22,
+      "failure_rate": 0.022,
+      "first_row": 7001,
+      "last_row": 8000,
+      "TWF": 5,
+      "HDF": 0,
+      "PWF": 9,
+      "OSF": 9,
+      "RNF": 2
+    },
+    {
+      "block": 9,
+      "records": 1000,
+      "failures": 17,
+      "failure_rate": 0.017,
+      "first_row": 8001,
+      "last_row": 9000,
+      "TWF": 6,
+      "HDF": 0,
+      "PWF": 5,
+      "OSF": 7,
+      "RNF": 0
+    },
+    {
+      "block": 10,
+      "records": 1000,
+      "failures": 22,
+      "failure_rate": 0.022,
+      "first_row": 9001,
+      "last_row": 10000,
+      "TWF": 4,
+      "HDF": 0,
+      "PWF": 5,
+      "OSF": 14,
+      "RNF": 0
+    }
+  ],
+  "failure_label_support": {
+    "TWF": {
+      "positive_flags": 46,
+      "with_primary_failure": 46,
+      "without_primary_failure": 0
+    },
+    "HDF": {
+      "positive_flags": 115,
+      "with_primary_failure": 115,
+      "without_primary_failure": 0
+    },
+    "PWF": {
+      "positive_flags": 95,
+      "with_primary_failure": 95,
+      "without_primary_failure": 0
+    },
+    "OSF": {
+      "positive_flags": 98,
+      "with_primary_failure": 98,
+      "without_primary_failure": 0
+    },
+    "RNF": {
+      "positive_flags": 19,
+      "with_primary_failure": 1,
+      "without_primary_failure": 18
+    }
+  },
+  "failure_label_cooccurrence": {
+    "TWF": {
+      "TWF": 46,
+      "HDF": 0,
+      "PWF": 1,
+      "OSF": 3,
+      "RNF": 1
+    },
+    "HDF": {
+      "TWF": 0,
+      "HDF": 115,
+      "PWF": 3,
+      "OSF": 6,
+      "RNF": 0
+    },
+    "PWF": {
+      "TWF": 1,
+      "HDF": 3,
+      "PWF": 95,
+      "OSF": 12,
+      "RNF": 0
+    },
+    "OSF": {
+      "TWF": 3,
+      "HDF": 6,
+      "PWF": 12,
+      "OSF": 98,
+      "RNF": 0
+    },
+    "RNF": {
+      "TWF": 1,
+      "HDF": 0,
+      "PWF": 0,
+      "OSF": 0,
+      "RNF": 19
+    }
+  },
+  "outlier_failure_rates": {
+    "Air temperature [K]": [
+      {
+        "outside_iqr_fences": false,
+        "records": 10000,
+        "failures": 339,
+        "failure_rate": 0.0339
+      }
+    ],
+    "Process temperature [K]": [
+      {
+        "outside_iqr_fences": false,
+        "records": 10000,
+        "failures": 339,
+        "failure_rate": 0.0339
+      }
+    ],
+    "Rotational speed [rpm]": [
+      {
+        "outside_iqr_fences": false,
+        "records": 9582,
+        "failures": 304,
+        "failure_rate": 0.031726153203924023
+      },
+      {
+        "outside_iqr_fences": true,
+        "records": 418,
+        "failures": 35,
+        "failure_rate": 0.08373205741626795
+      }
+    ],
+    "Torque [Nm]": [
+      {
+        "outside_iqr_fences": false,
+        "records": 9931,
+        "failures": 277,
+        "failure_rate": 0.027892457959923473
+      },
+      {
+        "outside_iqr_fences": true,
+        "records": 69,
+        "failures": 62,
+        "failure_rate": 0.8985507246376812
+      }
+    ],
+    "Tool wear [min]": [
+      {
+        "outside_iqr_fences": false,
+        "records": 10000,
+        "failures": 339,
+        "failure_rate": 0.0339
+      }
+    ]
+  },
+  "source_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "runtime": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  }
+}

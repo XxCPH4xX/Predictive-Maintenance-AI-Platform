@@ -1,0 +1,158 @@
+[
+  {
+    "protocol": "stratified",
+    "fold": 1,
+    "threshold": 0.5,
+    "precision": 0.746031746031746,
+    "recall": 0.7014925373134329,
+    "f1": 0.7230769230769231,
+    "f2": 0.7099697885196374,
+    "roc_auc": 0.9753611662329841,
+    "pr_auc": 0.7653916249684402,
+    "brier_score": 0.014686360955238342,
+    "confusion_matrix": [
+      [
+        1917,
+        16
+      ],
+      [
+        20,
+        47
+      ]
+    ],
+    "false_negatives": 20,
+    "false_negative_rate": 0.29850746268656714,
+    "support": 2000,
+    "positive_support": 67
+  },
+  {
+    "protocol": "stratified",
+    "fold": 2,
+    "threshold": 0.5,
+    "precision": 0.75,
+    "recall": 0.5735294117647058,
+    "f1": 0.65,
+    "f2": 0.6018518518518519,
+    "roc_auc": 0.9689745463402754,
+    "pr_auc": 0.7588581217561774,
+    "brier_score": 0.015117543749511242,
+    "confusion_matrix": [
+      [
+        1919,
+        13
+      ],
+      [
+        29,
+        39
+      ]
+    ],
+    "false_negatives": 29,
+    "false_negative_rate": 0.4264705882352941,
+    "support": 2000,
+    "positive_support": 68
+  },
+  {
+    "protocol": "stratified",
+    "fold": 3,
+    "threshold": 0.5,
+    "precision": 0.7288135593220338,
+    "recall": 0.6323529411764706,
+    "f1": 0.6771653543307087,
+    "f2": 0.649546827794562,
+    "roc_auc": 0.9677186091828037,
+    "pr_auc": 0.73060785704974,
+    "brier_score": 0.015293499454855919,
+    "confusion_matrix": [
+      [
+        1916,
+        16
+      ],
+      [
+        25,
+        43
+      ]
+    ],
+    "false_negatives": 25,
+    "false_negative_rate": 0.36764705882352944,
+    "support": 2000,
+    "positive_support": 68
+  },
+  {
+    "protocol": "csv_blocks",
+    "fold": 1,
+    "threshold": 0.5,
+    "precision": 0.5116279069767442,
+    "recall": 0.5238095238095238,
+    "f1": 0.5176470588235295,
+    "f2": 0.5213270142180095,
+    "roc_auc": 0.9576390012403603,
+    "pr_auc": 0.5860679722623642,
+    "brier_score": 0.016636637970805168,
+    "confusion_matrix": [
+      [
+        1745,
+        21
+      ],
+      [
+        20,
+        22
+      ]
+    ],
+    "false_negatives": 20,
+    "false_negative_rate": 0.47619047619047616,
+    "support": 1808,
+    "positive_support": 42
+  },
+  {
+    "protocol": "csv_blocks",
+    "fold": 2,
+    "threshold": 0.5,
+    "precision": 0.7241379310344828,
+    "recall": 0.3333333333333333,
+    "f1": 0.45652173913043476,
+    "f2": 0.3736654804270463,
+    "roc_auc": 0.8845019981988066,
+    "pr_auc": 0.49063729393383776,
+    "brier_score": 0.03704079985618591,
+    "confusion_matrix": [
+      [
+        2240,
+        16
+      ],
+      [
+        84,
+        42
+      ]
+    ],
+    "false_negatives": 84,
+    "false_negative_rate": 0.6666666666666666,
+    "support": 2382,
+    "positive_support": 126
+  },
+  {
+    "protocol": "csv_blocks",
+    "fold": 3,
+    "threshold": 0.5,
+    "precision": 0.68,
+    "recall": 0.4857142857142857,
+    "f1": 0.5666666666666667,
+    "f2": 0.5151515151515151,
+    "roc_auc": 0.9472354124748491,
+    "pr_auc": 0.5351300100347574,
+    "brier_score": 0.013434676453471184,
+    "confusion_matrix": [
+      [
+        1767,
+        8
+      ],
+      [
+        18,
+        17
+      ]
+    ],
+    "false_negatives": 18,
+    "false_negative_rate": 0.5142857142857142,
+    "support": 1810,
+    "positive_support": 35
+  }
+]

@@ -1,0 +1,346 @@
+{
+  "shape": [
+    10000,
+    14
+  ],
+  "columns": {
+    "UDI": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 10000,
+      "unique_values_or_first_ten": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Product ID": {
+      "dtype": "str",
+      "missing": 0,
+      "unique_count": 10000,
+      "unique_values_or_first_ten": [
+        "H29424",
+        "H29425",
+        "H29432",
+        "H29434",
+        "H29441",
+        "H29452",
+        "H29457",
+        "H29462",
+        "H29466",
+        "H29481"
+      ]
+    },
+    "Type": {
+      "dtype": "str",
+      "missing": 0,
+      "unique_count": 3,
+      "unique_values_or_first_ten": [
+        "H",
+        "L",
+        "M"
+      ]
+    },
+    "Air temperature [K]": {
+      "dtype": "float64",
+      "missing": 0,
+      "unique_count": 93,
+      "unique_values_or_first_ten": [
+        295.3,
+        295.4,
+        295.5,
+        295.6,
+        295.7,
+        295.8,
+        295.9,
+        296.0,
+        296.1,
+        296.2
+      ]
+    },
+    "Process temperature [K]": {
+      "dtype": "float64",
+      "missing": 0,
+      "unique_count": 82,
+      "unique_values_or_first_ten": [
+        305.7,
+        305.8,
+        305.9,
+        306.0,
+        306.1,
+        306.2,
+        306.3,
+        306.4,
+        306.5,
+        306.6
+      ]
+    },
+    "Rotational speed [rpm]": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 941,
+      "unique_values_or_first_ten": [
+        1168,
+        1181,
+        1183,
+        1192,
+        1200,
+        1202,
+        1207,
+        1208,
+        1212,
+        1217
+      ]
+    },
+    "Torque [Nm]": {
+      "dtype": "float64",
+      "missing": 0,
+      "unique_count": 577,
+      "unique_values_or_first_ten": [
+        3.8,
+        4.2,
+        4.6,
+        5.6,
+        5.8,
+        8.0,
+        8.8,
+        9.3,
+        9.7,
+        9.8
+      ]
+    },
+    "Tool wear [min]": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 246,
+      "unique_values_or_first_ten": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Machine failure": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "unique_values_or_first_ten": [
+        0,
+        1
+      ]
+    },
+    "TWF": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "unique_values_or_first_ten": [
+        0,
+        1
+      ]
+    },
+    "HDF": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "unique_values_or_first_ten": [
+        0,
+        1
+      ]
+    },
+    "PWF": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "unique_values_or_first_ten": [
+        0,
+        1
+      ]
+    },
+    "OSF": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "unique_values_or_first_ten": [
+        0,
+        1
+      ]
+    },
+    "RNF": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "unique_values_or_first_ten": [
+        0,
+        1
+      ]
+    }
+  },
+  "duplicate_rows": 0,
+  "duplicate_feature_rows": 0,
+  "duplicate_identifiers": {
+    "UDI": 0,
+    "Product ID": 0
+  },
+  "udi_is_sequential": true,
+  "product_prefix_type_mismatches": 0,
+  "target_counts": {
+    "0": 9661,
+    "1": 339
+  },
+  "failure_rate": 0.0339,
+  "machine_type_counts": {
+    "H": 1003,
+    "L": 6000,
+    "M": 2997
+  },
+  "numeric_statistics": {
+    "Air temperature [K]": {
+      "count": 10000.0,
+      "mean": 300.00493,
+      "std": 2.0002586829157516,
+      "min": 295.3,
+      "25%": 298.3,
+      "50%": 300.1,
+      "75%": 301.5,
+      "max": 304.5
+    },
+    "Process temperature [K]": {
+      "count": 10000.0,
+      "mean": 310.00555999999995,
+      "std": 1.4837342191657208,
+      "min": 305.7,
+      "25%": 308.8,
+      "50%": 310.1,
+      "75%": 311.1,
+      "max": 313.8
+    },
+    "Rotational speed [rpm]": {
+      "count": 10000.0,
+      "mean": 1538.7761,
+      "std": 179.2840959134266,
+      "min": 1168.0,
+      "25%": 1423.0,
+      "50%": 1503.0,
+      "75%": 1612.0,
+      "max": 2886.0
+    },
+    "Torque [Nm]": {
+      "count": 10000.0,
+      "mean": 39.986909999999995,
+      "std": 9.968933725121337,
+      "min": 3.8,
+      "25%": 33.2,
+      "50%": 40.1,
+      "75%": 46.8,
+      "max": 76.6
+    },
+    "Tool wear [min]": {
+      "count": 10000.0,
+      "mean": 107.951,
+      "std": 63.65414663663636,
+      "min": 0.0,
+      "25%": 53.0,
+      "50%": 108.0,
+      "75%": 162.0,
+      "max": 253.0
+    }
+  },
+  "failure_type_counts": {
+    "TWF": 46,
+    "HDF": 115,
+    "PWF": 95,
+    "OSF": 98,
+    "RNF": 19
+  },
+  "failure_label_combinations": {
+    "none": 9652,
+    "HDF": 106,
+    "PWF": 80,
+    "OSF": 78,
+    "TWF": 42,
+    "RNF": 18,
+    "PWF+OSF": 11,
+    "HDF+OSF": 6,
+    "HDF+PWF": 3,
+    "TWF+OSF": 2,
+    "TWF+RNF": 1,
+    "TWF+PWF+OSF": 1
+  },
+  "rows_with_multiple_failure_labels": 24,
+  "failure_without_type_udi": [
+    1438,
+    2750,
+    4045,
+    4685,
+    5537,
+    5942,
+    6479,
+    8507,
+    9016
+  ],
+  "type_without_failure_udi": [
+    1222,
+    1303,
+    1749,
+    2073,
+    2560,
+    3066,
+    3453,
+    5472,
+    5490,
+    5496,
+    5510,
+    5554,
+    5640,
+    6092,
+    6914,
+    6961,
+    7489,
+    7869
+  ],
+  "potential_outliers_iqr": {
+    "Air temperature [K]": {
+      "lower_fence": 293.5,
+      "upper_fence": 306.29999999999995,
+      "count": 0
+    },
+    "Process temperature [K]": {
+      "lower_fence": 305.35,
+      "upper_fence": 314.55000000000007,
+      "count": 0
+    },
+    "Rotational speed [rpm]": {
+      "lower_fence": 1139.5,
+      "upper_fence": 1895.5,
+      "count": 418
+    },
+    "Torque [Nm]": {
+      "lower_fence": 12.800000000000011,
+      "upper_fence": 67.19999999999999,
+      "count": 69
+    },
+    "Tool wear [min]": {
+      "lower_fence": -110.5,
+      "upper_fence": 325.5,
+      "count": 0
+    }
+  },
+  "source": "data/raw/ai4i2020.csv",
+  "sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "runtime": {
+    "pandas": "3.0.6"
+  }
+}

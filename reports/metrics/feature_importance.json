@@ -1,0 +1,32 @@
+{
+  "model_version": "ai4i-f3eb2ed3aaf9",
+  "units": "log_odds",
+  "sample": "400 validation rows, seed 42",
+  "feature_importance": [
+    {
+      "feature": "Torque [Nm]",
+      "mean_absolute_shap": 1.692755937576294
+    },
+    {
+      "feature": "Tool wear [min]",
+      "mean_absolute_shap": 1.3488523960113525
+    },
+    {
+      "feature": "Air temperature [K]",
+      "mean_absolute_shap": 1.0532959699630737
+    },
+    {
+      "feature": "Rotational speed [rpm]",
+      "mean_absolute_shap": 1.0086482763290405
+    },
+    {
+      "feature": "Process temperature [K]",
+      "mean_absolute_shap": 0.42400166392326355
+    },
+    {
+      "feature": "Type",
+      "mean_absolute_shap": 0.19479890167713165
+    }
+  ],
+  "interpretation": "Contributed to the model score; not a causal explanation"
+}

@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "Type": "M",
+    "Air temperature [K]": 298.2,
+    "Process temperature [K]": 308.8,
+    "Rotational speed [rpm]": 1607,
+    "Torque [Nm]": 31.9,
+    "Tool wear [min]": 39
+  },
+  "failure_probability": 0.0003318358794786036,
+  "base_value": -2.2958083152770996,
+  "units": "log_odds",
+  "contributions": {
+    "Air temperature [K]": -0.9581551551818848,
+    "Process temperature [K]": -0.14073921740055084,
+    "Rotational speed [rpm]": -1.1490932703018188,
+    "Torque [Nm]": -1.7664456367492676,
+    "Tool wear [min]": -1.5178815126419067,
+    "Type": -0.18241684138774872
+  }
+}

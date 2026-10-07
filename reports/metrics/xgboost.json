@@ -1,0 +1,26 @@
+{
+  "model": "xgboost",
+  "partition": "validation",
+  "threshold": 0.5,
+  "precision": 0.8936170212765957,
+  "recall": 0.6176470588235294,
+  "f1": 0.7304347826086957,
+  "f2": 0.658307210031348,
+  "roc_auc": 0.9654807575203995,
+  "pr_auc": 0.7941015101064817,
+  "brier_score": 0.013479077257215977,
+  "confusion_matrix": [
+    [
+      1927,
+      5
+    ],
+    [
+      26,
+      42
+    ]
+  ],
+  "false_negatives": 26,
+  "false_negative_rate": 0.38235294117647056,
+  "support": 2000,
+  "positive_support": 68
+}

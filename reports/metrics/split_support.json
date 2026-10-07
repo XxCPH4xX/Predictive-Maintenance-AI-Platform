@@ -1,0 +1,32 @@
+[
+  {
+    "partition": "train",
+    "records": 6000,
+    "failures": 203,
+    "TWF": 27,
+    "HDF": 67,
+    "PWF": 64,
+    "OSF": 57,
+    "RNF": 11
+  },
+  {
+    "partition": "validation",
+    "records": 2000,
+    "failures": 68,
+    "TWF": 12,
+    "HDF": 22,
+    "PWF": 16,
+    "OSF": 21,
+    "RNF": 3
+  },
+  {
+    "partition": "test",
+    "records": 2000,
+    "failures": 68,
+    "TWF": 7,
+    "HDF": 26,
+    "PWF": 15,
+    "OSF": 20,
+    "RNF": 5
+  }
+]
