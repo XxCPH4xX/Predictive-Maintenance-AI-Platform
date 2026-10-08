@@ -1,6 +1,3 @@
-import json
-
-import numpy as np
 import pytest
 from pydantic import ValidationError
 
@@ -16,8 +13,14 @@ def engine():
 
 @pytest.fixture
 def reading():
-    return MachineReading(machine_type="M", air_temperature=298.1, process_temperature=308.6,
-                          rotational_speed=1551, torque=42.8, tool_wear=0)
+    return MachineReading(
+        machine_type="M",
+        air_temperature=298.1,
+        process_temperature=308.6,
+        rotational_speed=1551,
+        torque=42.8,
+        tool_wear=0,
+    )
 
 
 def test_inference_matches_persisted_pipeline(engine, reading):
@@ -30,8 +33,12 @@ def test_inference_matches_persisted_pipeline(engine, reading):
 def test_explanation_adds_to_model_score(engine, reading):
     explanation = engine.explain(reading)
     value = explanation["base_value"] + sum(item["value"] for item in explanation["contributions"])
-    transformed = engine.explanation_pipeline.named_steps["preprocess"].transform(engine.to_frame([reading]))
-    expected = engine.explanation_pipeline.named_steps["classifier"].predict(transformed, output_margin=True)[0]
+    transformed = engine.explanation_pipeline.named_steps["preprocess"].transform(
+        engine.to_frame([reading])
+    )
+    expected = engine.explanation_pipeline.named_steps["classifier"].predict(
+        transformed, output_margin=True
+    )[0]
     assert value == pytest.approx(float(expected), abs=1e-4)
     assert len(explanation["contributions"]) == 6
 
@@ -44,8 +51,16 @@ def test_risk_boundary_values(engine):
     assert risk_level(1, thresholds) == "critical"
 
 
-@pytest.mark.parametrize(("field", "value"), [("machine_type", "X"), ("torque", -1),
-    ("air_temperature", float("inf")), ("tool_wear", True), ("rotational_speed", 1.5)])
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("machine_type", "X"),
+        ("torque", -1),
+        ("air_temperature", float("inf")),
+        ("tool_wear", True),
+        ("rotational_speed", 1.5),
+    ],
+)
 def test_invalid_readings(reading, field, value):
     with pytest.raises(ValidationError):
         MachineReading(**{**reading.model_dump(), field: value})

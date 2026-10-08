@@ -1,0 +1,73 @@
+{
+  "source": "ai4i2020.csv",
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "model_version": "ai4i-f3eb2ed3aaf9",
+  "threshold": 0.08567804843187332,
+  "scores": [
+    {
+      "partition": "train",
+      "rows": 6000,
+      "actual_failures": 203,
+      "predicted_failures": 412,
+      "true_positives": 203,
+      "false_positives": 209,
+      "false_negatives": 0,
+      "true_negatives": 5588,
+      "precision": 0.49271844660194175,
+      "recall": 1.0,
+      "f1": 0.6601626016260163,
+      "roc_auc": 0.9999422157375438,
+      "pr_auc": 0.9983996042697644,
+      "brier_score": 0.0026227484457116996
+    },
+    {
+      "partition": "validation",
+      "rows": 2000,
+      "actual_failures": 68,
+      "predicted_failures": 138,
+      "true_positives": 62,
+      "false_positives": 76,
+      "false_negatives": 6,
+      "true_negatives": 1856,
+      "precision": 0.4492753623188406,
+      "recall": 0.9117647058823529,
+      "f1": 0.6019417475728155,
+      "roc_auc": 0.9725672877846792,
+      "pr_auc": 0.804986115523316,
+      "brier_score": 0.012475271083405265
+    },
+    {
+      "partition": "test",
+      "rows": 2000,
+      "actual_failures": 68,
+      "predicted_failures": 143,
+      "true_positives": 58,
+      "false_positives": 85,
+      "false_negatives": 10,
+      "true_negatives": 1847,
+      "precision": 0.40559440559440557,
+      "recall": 0.8529411764705882,
+      "f1": 0.5497630331753555,
+      "roc_auc": 0.980559615150408,
+      "pr_auc": 0.7705856242080065,
+      "brier_score": 0.01344057659314957
+    },
+    {
+      "partition": "all_rows_includes_training",
+      "rows": 10000,
+      "actual_failures": 339,
+      "predicted_failures": 693,
+      "true_positives": 323,
+      "false_positives": 370,
+      "false_negatives": 16,
+      "true_negatives": 9291,
+      "precision": 0.4660894660894661,
+      "recall": 0.9528023598820059,
+      "f1": 0.625968992248062,
+      "roc_auc": 0.9907055677130231,
+      "pr_auc": 0.9220019469659367,
+      "brier_score": 0.006756818602737987
+    }
+  ],
+  "note": "Whole-file results include training data. Test results repeat the original frozen held-out evaluation; no refitting or tuning performed."
+}

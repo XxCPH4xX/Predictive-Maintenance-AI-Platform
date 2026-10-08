@@ -13,7 +13,14 @@ class MachineReading(BaseModel):
     torque: float = Field(gt=0, le=500)
     tool_wear: int = Field(ge=0, le=10000)
 
-    @field_validator("air_temperature", "process_temperature", "rotational_speed", "torque", "tool_wear", mode="before")
+    @field_validator(
+        "air_temperature",
+        "process_temperature",
+        "rotational_speed",
+        "torque",
+        "tool_wear",
+        mode="before",
+    )
     @classmethod
     def reject_boolean_readings(cls, value):
         if isinstance(value, bool):

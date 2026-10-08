@@ -16,3 +16,7 @@ node_modules/
 models/
 data/processed/
 /ai4i2020.csv
+*.tsbuildinfo
+.ruff_cache/
+test-results/
+playwright-report/

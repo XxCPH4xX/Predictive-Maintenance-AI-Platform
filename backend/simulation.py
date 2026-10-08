@@ -19,14 +19,16 @@ class SensorSimulator:
                 load = (math.sin(self.tick / 4 + index) + 1) / 2
                 torque = round(32 + load * 30 + self.random.uniform(-2, 2), 1)
                 air = round(300 + 2 * math.sin(self.tick / 15 + index / 2), 1)
-                readings.append({
-                    "machine_id": f"SIM-{index + 1:03d}",
-                    "machine_type": ("L", "M", "H")[index % 3],
-                    "air_temperature": air,
-                    "process_temperature": round(air + 8.2 + (1 - load) * 2, 1),
-                    "rotational_speed": round(1710 - torque * 6 + self.random.uniform(-25, 25)),
-                    "torque": torque,
-                    "tool_wear": (index * 41 + self.tick * 3) % 245,
-                    "source": "simulated",
-                })
+                readings.append(
+                    {
+                        "machine_id": f"SIM-{index + 1:03d}",
+                        "machine_type": ("L", "M", "H")[index % 3],
+                        "air_temperature": air,
+                        "process_temperature": round(air + 8.2 + (1 - load) * 2, 1),
+                        "rotational_speed": round(1710 - torque * 6 + self.random.uniform(-25, 25)),
+                        "torque": torque,
+                        "tool_wear": (index * 41 + self.tick * 3) % 245,
+                        "source": "simulated",
+                    }
+                )
             return readings

@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
-    "start": "next start --hostname 0.0.0.0",
-    "typecheck": "tsc --noEmit"
+    "start": "node scripts/start.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "format:check": "prettier --check app components lib e2e scripts next.config.ts playwright.config.ts eslint.config.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "^16.0.0",
@@ -15,9 +18,13 @@
     "recharts": "^3.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.62.1",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.4.0",
+    "prettier": "^3.9.9",
     "typescript": "^5.9.0"
   },
   "packageManager": "pnpm@11.19.0"

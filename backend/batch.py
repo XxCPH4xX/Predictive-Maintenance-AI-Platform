@@ -7,7 +7,9 @@ from backend.config import FIELD_MAP, MAX_BATCH_ROWS
 from backend.schemas import PredictionRequest
 
 
-def parse_batch(content: bytes) -> tuple[list[tuple[int, PredictionRequest]], list[dict], int]:
+def parse_batch(
+    content: bytes,
+) -> tuple[list[tuple[int, PredictionRequest]], list[dict], int]:
     try:
         text = content.decode("utf-8-sig")
     except UnicodeDecodeError as error:
@@ -23,7 +25,9 @@ def parse_batch(content: bytes) -> tuple[list[tuple[int, PredictionRequest]], li
         raise ValueError(f"Missing required columns: {', '.join(missing)}")
     extra = sorted(set(fields) - set(FIELD_MAP) - {"machine_id"})
     if extra:
-        raise ValueError(f"Unsupported columns: {', '.join(extra)}. Use the downloadable input template.")
+        raise ValueError(
+            f"Unsupported columns: {', '.join(extra)}. Use the downloadable input template."
+        )
     valid, invalid = [], []
     total = 0
     for total, row in enumerate(reader, start=1):
@@ -37,7 +41,15 @@ def parse_batch(content: bytes) -> tuple[list[tuple[int, PredictionRequest]], li
         try:
             valid.append((line, PredictionRequest(**row, source="batch")))
         except ValidationError as error:
-            invalid.append({"row": line, "errors": [f"{'.'.join(map(str, item['loc']))}: {item['msg']}" for item in error.errors()]})
+            invalid.append(
+                {
+                    "row": line,
+                    "errors": [
+                        f"{'.'.join(map(str, item['loc']))}: {item['msg']}"
+                        for item in error.errors()
+                    ],
+                }
+            )
     if total == 0:
         raise ValueError("CSV contains no records")
     return valid, invalid, total
